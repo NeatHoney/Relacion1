@@ -5,6 +5,11 @@ void main() {
   double b = -3.0;
   double c = 2.0;
 
+  if (a == 0) {
+    print('No es una ecuación de segundo grado (a = 0)');
+    return;
+  }
+
   double discriminante = b * b - 4 * a * c;
 
   if (discriminante < 0) {
